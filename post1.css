@@ -1,0 +1,170 @@
+/* imports the fonts used on the page */
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Lora&family=Merriweather:wght@900&family=Open+Sans&display=swap');
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* styles the image in the background */
+body {
+  background-image: url(https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-repeat: round;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+}
+
+/* sets up the container grid */
+.container {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 0.05fr 1fr 0.05fr;
+  grid-template-columns: 100%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  font-family: 'Lora', sans-serif;
+  color: white;
+  font-size: 12px;
+}
+
+/* code for the navigation bar */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.nav-bar {
+  display: flex;
+  list-style: none;
+  width: 100vw;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: black;
+}
+
+.nav-item {
+  flex: 0 auto;
+  padding-right: 30px;
+  flex-wrap: wrap;
+  padding-left: 30px;
+}
+
+/* code to put the name and search feature on the right and left sides */
+.name {
+  margin-right: auto;
+  padding-left: 0;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.search {
+  margin-left: auto;
+  padding-left: 25px;
+}
+
+/* code for the main container where the main content is stored */
+.main-container {
+  display: grid;
+  width: 90vw;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: none;
+  background-color: #E7E7E7;
+  padding: 90px 25px 65px;
+}
+
+/* styles the image above the article */
+.img {
+  background-image: url(https://images.pexels.com/photos/1591305/pexels-photo-1591305.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 2px solid black;
+}
+
+/* gives the paragraph a font-size and indentation */
+.content {
+  color: black;
+  font-size: 16px;
+  text-indent: 10%;
+  line-height: 1.5;
+}
+
+/* styles the date and author name */
+.head-item {
+  list-style: none;
+  display: inline;
+  text-align: center;
+  color: darkslategrey;
+}
+
+.author {
+  float: right;
+  padding-right: 60px;
+}
+
+/* sets the header to be centered */
+h1,
+h2 {
+  text-align: center;
+  text-indent: 0;
+}
+
+/* styles my picture */
+img {
+  border-radius: 100%;
+  filter: grayscale(100%);
+  margin-right: 30px;
+  text-indent: 0;
+}
+
+.about {
+  text-indent: 0;
+}
+
+/* styles an underline to seperate different sections of the article */
+.underline {
+  border-bottom: 2px solid black;
+  padding-top: 10px;
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* styles back to top button */
+.button {
+  background-color: #FACA9B;
+  font-size: 15px;
+  display: inline;
+  position: fixed;
+  text-align: center;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.button a {
+  color: black;
+}
+
